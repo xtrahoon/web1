@@ -1,0 +1,46 @@
+#grid{
+	display:grid;
+	grid-template-columns:150px 1fr;
+	}
+ol {
+	padding-left:33px; 
+	}
+
+#grid #article{
+	padding-left:25px;
+	}
+
+a{
+	color:black; 			
+	text-decoration: none;
+	}
+body {
+	margin:0;
+	}
+h1 {
+	 font-size:45px;
+	 text-align:center;
+	 border-bottom:1px solid gray;  /* 밑줄긋기*/
+	 margin:0;      
+	 padding:20px;
+	}
+#grid ol{ /*ol은 블록 전체를 사용하는 block단위 element 이다. */
+	border-right:1px solid;
+	width:100px;
+	margin:0;
+	padding:20px;
+	}
+	
+/* 화면이 800px 보다 작을 때*/
+@media (max-width:800px)
+	{
+		#grid{
+			display:block; /* grid는 block 형태로*/
+		}
+		#grid ol{ 
+			border-right:none;
+		}
+		h1 {
+		 border-bottom:none  /* 밑줄긋기*/
+		}	
+	}
